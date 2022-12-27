@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Players</title>
+</head>
+<body>
+    <a href="/">Home</a>
+    <a href="/teams">View Teams</a>
+    <a href="/players">View Players</a>
+    <a href="/coaches">View Head Coaches</a>
+    <a href="/trainers">View Trainers</a>
+    <a href="/stadiums">View Stadiums</a>
+    <a href="/players_trainers">View Players-Trainers</a>
+    <h1>Players</h1>
+    <p>
+        This page will allow you to sort, view, update or delete the players. 
+    </p>
+    
+    <div>
+    <table border="1" class="searchable sortable">
+        <caption>Players</caption>
+        <thead>
+            <tr>
+                <th>Player ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Specialities</th>
+                <th>Active</th>
+                <th>Team</th>
+                <th>Salary</th>
+                <th>Height</th>
+                <th>Weight</th>
+                <th>Birthday</th>
+                <th>Primary Position</th>
+                <th>Secondary Position</th>
+                <th>FG%</th>
+                <th>FT%</th>
+                <th>PPG</th>
+                <th>RPG</th>
+                <th>APG</th>
+                <th>SPG</th>
+                <th>BPG</th>
+                <th>TPG</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                    <button type="button">Delete</button>
+                </td>
+                
+            </tr>
+        </tbody>
+    </table>
+    </div>  
+    <div>
+        <h2>Add a New Player</h2>
+        <form>
+            <fieldset>
+                <legend>New Player</legend>
+                <p>
+                    <label>
+                        First Name:
+                        <input type="text" name="first_name" size="30" maxlength="50">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        Last Name:
+                        <input type="text" name="last_name" size="30" maxlength="50">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        Specialities:
+                        <input type="text" name="specialities" size="30" maxlength="50">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        Active?
+                        <input type="radio" name="active" value="yes">
+                        Yes
+                        <input type="radio" name="active" value="no">
+                        No
+                    </label>
+                </p>
+                <p>
+                    <label for="teams">Choose a team:</label>
+                        <select name="teams" id="teams">
+                            <option value="Raptors">Raptors</option>
+                            <option value="Nets">Nets</option>
+                            <option value="Lakers">Lakers</option>
+                            <option value="Spurs">Spurs</option>
+                        </select>
+                </p>
+                <p>
+                    <label>
+                        Salary:
+                        <input type="number" name="salary" size="30" maxlength="50">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        Height:
+                        <input type="number" name="height" size="30" maxlength="50">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        Weight:
+                        <input type="number" name="weight" size="30" maxlength="50">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        Birthday:
+                        <input type="text" name="birthday" size="30" maxlength="50">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        Primary Position:
+                        <input type="text" name="primary_position" size="30" maxlength="50">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        Secondary Position:
+                        <input type="text" name="secondary_position" size="30" maxlength="50">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        FG%:
+                        <input type="number" step=".01" name="fg%" size="30" maxlength="50">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        FT%:
+                        <input type="number" step=".01" name="ft%" size="30" maxlength="50">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        PPG:
+                        <input type="number" step=".01" name="ppg" size="30" maxlength="50">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        RPG:
+                        <input type="number" step=".01" name="rpg" size="30" maxlength="50">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        APG:
+                        <input type="number" step=".01" name="apg" size="30" maxlength="50">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        SPG:
+                        <input type="number" step=".01" name="spg" size="30" maxlength="50">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        BPG:
+                        <input type="number" step=".01" name="bpg" size="30" maxlength="50">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        TPG:
+                        <input type="number" step=".01" name="tpg" size="30" maxlength="50">
+                    </label>
+                </p>
+                <p>
+                    <button type="button">Add Player</button>
+                </p>
+            </fieldset>
+        </form>
+    </div>
+    <div>
+        <h2>Update a Player</h2>
+        <form>
+            <fieldset>
+                <legend>Update Player</legend>
+                <p>
+                    Player ID:
+                    <input type="number" name="player_id" size="30" maxlength="50">
+                    <button type="button">Apply</button>
+                </p>
+                <p>
+                    <label>
+                        First Name:
+                        <input type="text" name="first_name" size="30" maxlength="50">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        Last Name:
+                        <input type="text" name="last_name" size="30" maxlength="50">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        Specialities:
+                        <input type="text" name="specialities" size="30" maxlength="50">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        Active?
+                        <input type="radio" name="active" value="yes">
+                        Yes
+                        <input type="radio" name="active" value="no">
+                        No
+                    </label>
+                </p>
+                <p>
+                    <label for="teams">Choose a team:</label>
+                        <select name="teams" id="teamsUpdate">
+                            <option value="Raptors">Raptors</option>
+                            <option value="Nets">Nets</option>
+                            <option value="Lakers">Lakers</option>
+                            <option value="Spurs">Spurs</option>
+                        </select>
+                </p>
+                <p>
+                    <label>
+                        Salary:
+                        <input type="number" name="salary" size="30" maxlength="50">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        Height:
+                        <input type="number" name="first_name" size="30" maxlength="50">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        Weight:
+                        <input type="number" name="weight" size="30" maxlength="50">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        Birthday:
+                        <input type="text" name="birthday" size="30" maxlength="50">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        Primary Position:
+                        <input type="text" name="primary_position" size="30" maxlength="50">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        Secondary Position:
+                        <input type="text" name="secondary_position" size="30" maxlength="50">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        FG%:
+                        <input type="number" step=".01" name="fg%" size="30" maxlength="50">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        FT%:
+                        <input type="number" step=".01" name="ft%" size="30" maxlength="50">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        PPG:
+                        <input type="number" step=".01" name="ppg" size="30" maxlength="50">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        RPG:
+                        <input type="number" step=".01" name="rpg" size="30" maxlength="50">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        APG:
+                        <input type="number" step=".01" name="apg" size="30" maxlength="50">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        SPG:
+                        <input type="number" step=".01" name="spg" size="30" maxlength="50">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        BPG:
+                        <input type="number" step=".01" name="bpg" size="30" maxlength="50">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        TPG:
+                        <input type="number" step=".01" name="tpg" size="30" maxlength="50">
+                    </label>
+                </p>
+                <p>
+                    <button type="button">Update Player</button>
+                </p>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

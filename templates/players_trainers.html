@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Players-Trainers</title>
+</head>
+<body>
+    <a href="/">Home</a>
+    <a href="/teams">View Teams</a>
+    <a href="/players">View Players</a>
+    <a href="/coaches">View Head Coaches</a>
+    <a href="/trainers">View Trainers</a>
+    <a href="/stadiums">View Stadiums</a>
+    <a href="/players_trainers">View Players-Trainers</a>
+    <h1>Players-Trainers</h1>
+    <p>
+        This page will allow you to view players and trainers who have worked together.
+    </p>
+
+    <div>
+        <table border="1" class="searchable sortable">
+            <caption>Player-Trainer Relationships</caption>
+            <thead>
+                <tr>
+                    <th>Player Name</th>
+                    <th>Trainer Name</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <button type="button">Delete Relationship</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div>
+        <h2>Add a New Relationship</h2>
+        <form>
+            <fieldset>
+                <legend>New Relationship</legend>
+                <p>
+                    <label>
+                        Player ID:
+                        <input type="text" name="player_id" size="30" maxlength="50">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        Trainer ID:
+                        <input type="text" name="trainer_id" size="30" maxlength="50">
+                    </label>
+                </p>
+                <p>
+                    <button type="button">Add Relationship</button>
+                </p>
+            </fieldset>
+        </form>
+    </div>
+    
+    <div>
+        <h2>Search Players-Trainers Relationship By Player ID and Trainer ID</h2>
+        <form>
+            <fieldset>
+                <legend>Search Relationship by Player ID</legend>
+                <p>
+                    <label for="playerID">ID:</label>
+                        <select name="playerID" id="playerID">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                </p>
+                <p>
+                    <button type="button">Search</button>
+                </p>
+            </fieldset>
+        </form>
+        <form>
+            <fieldset>
+                <legend>Search Relationship by Trainer ID</legend>
+                <p>
+                    <label for="trainerID">ID:</label>
+                        <select name="trainerID" id="trainerID">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                </p>
+                <p>
+                    <button type="button">Search</button>
+                </p>
+            </fieldset>
+        </form>
+    </div>
+    
+</body>
+</html>

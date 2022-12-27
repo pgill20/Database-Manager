@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stadiums</title>
+</head>
+<body>
+    <a href="/">Home</a>
+    <a href="/teams">View Teams</a>
+    <a href="/players">View Players</a>
+    <a href="/coaches">View Head Coaches</a>
+    <a href="/trainers">View Trainers</a>
+    <a href="/stadiums">View Stadiums</a>
+    <a href="/players_trainers">View Players-Trainers</a>
+    <h1>Stadiums</h1>
+    <p>
+        This page will allow you to view, update or delete the stadiums.
+    </p>
+
+    <div>
+        <table border="1" class="searchable sortable">
+            <caption>Stadiums</caption>
+            <thead>
+                <tr>
+                    <th>Stadium ID</th>
+                    <th>Name</th>
+                    <th>Team</th>
+                    <th>State</th>
+                    <th>City</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <button type="button">Delete Stadium</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <h2>Add a New Stadium</h2>
+        <form>
+            <fieldset>
+                <legend>New Stadium</legend>
+                <p>
+                    <label>
+                        Name:
+                        <input type="text" name="name" size="30" maxlength="50">
+                    </label>
+                </p>
+                <p>
+                    <label for="teams">Choose a team:</label>
+                        <select name="teams" id="teams">
+                            <option value="Raptors">Raptors</option>
+                            <option value="Nets">Nets</option>
+                            <option value="Lakers">Lakers</option>
+                            <option value="Spurs">Spurs</option>
+                        </select>
+                </p>
+                <p>
+                    <label>
+                        State:
+                        <input type="text" name="state" size="30" maxlength="50">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        City:
+                        <input type="text" name="city" size="30" maxlength="50">
+                    </label>
+                </p>
+                <p>
+                    <button type="button">Add Stadium</button>
+                </p>
+            </fieldset>
+        </form>
+    </div>
+    <div>
+        <h2>Update a Stadium</h2>
+        <form>
+            <fieldset>
+                <legend>Update Stadium</legend>
+                <p>
+                    <label>
+                        Name:
+                        <input type="text" name="name" size="30" maxlength="50">
+                    </label>
+                </p>
+                <p>
+                    <label for="teams">Choose a team:</label>
+                        <select name="teams" id="teamsUpdate">
+                            <option value="Raptors">Raptors</option>
+                            <option value="Nets">Nets</option>
+                            <option value="Lakers">Lakers</option>
+                            <option value="Spurs">Spurs</option>
+                        </select>
+                </p>
+                <p>
+                    <label>
+                        State:
+                        <input type="text" name="state" size="30" maxlength="50">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        City:
+                        <input type="text" name="city" size="30" maxlength="50">
+                    </label>
+                </p>
+                <p>
+                    <button type="button">Update Stadium</button>
+                </p>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
